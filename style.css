@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ccc;
+  position: sticky;
+  top: 0;
+  z-index: 555;
+  padding: 20px 40px;
+}
+nav .menu {
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+nav .left a {
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+  transition: 0.7s;
+}
+nav .left a:hover {
+  background-color: #ccc;
+}
+nav .left a span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+nav .right ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+nav .right ul a {
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+  transition: 0.7s;
+}
+nav .right ul a:hover {
+  background-color: #ccc;
+}
+header {
+  background-image: url(images/architect.jpg);
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+header h2 {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+header h2 span {
+  background-color: black;
+  padding: 10px;
+  opacity: 0.7;
+  margin-right: 8px;
+}
+.container {
+  margin: 100px auto;
+  width: 90%;
+}
+.houses {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 10px;
+}
+.house {
+  width: 24%;
+  position: relative;
+}
+.house img {
+  width: 100%;
+}
+hr {
+  margin: 30px;
+  opacity: 0.2;
+}
+.house p {
+  position: absolute;
+  top: 0;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+.description {
+  line-height: 1.8;
+  color: gray;
+  font-size: 18px;
+}
+.chars {
+  margin-top: 50px;
+  display: flex;
+  gap: 10px;
+}
+.char {
+  width: 24%;
+}
+.char > * {
+  margin-bottom: 10px;
+}
+.char h3 {
+  opacity: 0.5;
+}
+.char p {
+  line-height: 1.5;
+}
+.char img {
+  width: 100%;
+  border-radius: 5px;
+}
+.char button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.char button:hover {
+  background-color: #ccc;
+}
+.contact p {
+  margin-bottom: 40px;
+}
+.contact input {
+  width: 80%;
+  padding: 10px;
+  outline: none;
+  margin-top: 10px;
+}
+.contact button {
+  margin-top: 30px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font: size 18px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+.contact button:hover {
+  background-color: #ccc;
+  color: black;
+}
+.map img {
+  width: 100%;
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+@media screen and (max-width: 480px) {
+  nav {
+    padding: 20px;
+  }
+  nav .right ul {
+    display: none;
+  }
+  nav .menu {
+    display: block;
+  }
+  header h2 {
+    left: 10%;
+  }
+  .houses{
+    flex-direction: column;
+  }
+  .house {
+    width: 100%;
+  }
+  .chars{
+    flex-direction: column;
+  }
+  .char{
+    width: 100%;
+  }
+}
+@media screen and ( ) and (max-width:768px){
+  nav {
+    padding: 20px;
+  }
+  nav .right ul {
+    display: none;
+  }
+  nav .menu {
+    display: block;
+  }
+  header h2 {
+    left: 40%;
+  }
+  .house {
+    width: 48%;
+  }
+  .char{
+    width: 48%;
+  }
+}
